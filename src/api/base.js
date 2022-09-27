@@ -1,5 +1,5 @@
 const base = {
     baseUrl:"",
-    ncov:"http://iwenwiki.com/wapicovid19/ncov.php"
+    ncov:"http://api.tianapi.com/ncov/index"
 }
 export default base;

@@ -8,13 +8,12 @@
             <p v-html="covid19Info.info1"></p>
             <p>{{covid19Info.info2}}</p>
             <p>{{covid19Info.info3}}</p>
-            
         </div>
     </div>
 </template>
 
 <script>
-    import api from '../api/index'
+    
     export default {
         data() {
             return {
@@ -24,20 +23,6 @@
                     info3:"发病特征:根据现有病例资料，新型冠状病毒肺炎以发热、干咳、乏力等为主要表现，少数患者伴有鼻塞、流涕、腹泻等上呼吸道和消化道症状。重症病例多在1周后出现呼吸困难，严重者快速进展为急性呼吸窘迫综合征、脓毒症休克、难以纠正的代谢性酸中毒和出凝血功能障碍及多器官功能衰竭等。"
                 }
             }
-        },
-        mounted(){
-            //疫情信息数据
-            /* api.getNocv({
-                key:"62e34ad34025d5d5127135efa58d4ca8"
-            }).then(res=>{
-                if (res.status === 200) {
-                    this.covid19Info = {
-
-                    }
-                }
-            }).catch(error=>{
-                console.log(error);
-            }) */
         }
     }
 </script>
