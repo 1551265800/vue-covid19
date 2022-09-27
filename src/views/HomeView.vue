@@ -1,12 +1,20 @@
 <template>
   <div class="home">
-    <h3>home</h3>
+    <Header></Header>
+    <Covid19Info></Covid19Info>
   </div>
 </template>
 
 <script>
 
+import Heradr from '../components/Header.vue';
+import Header from '../components/Header.vue';
+import Covid19Info from '@/components/Covid19-info.vue';
 export default {
-  name: 'HomeView'
+  components: {
+    Heradr,
+    Header,
+    Covid19Info
+},
 }
 </script>
