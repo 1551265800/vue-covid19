@@ -32,7 +32,7 @@ export default {
       key: "3db611fc1b2a83da29358251615e13d9"
     }).then(res => {
       res = res.data
-      console.log(res);
+      /* console.log(res); */
       if (res.code === 200) {
         this.caseNum = {
           currentConfirmedCount: res.newslist[0].desc.currentConfirmedCount,//现存确诊人数
@@ -53,7 +53,7 @@ export default {
           midDangerCount: res.newslist[0].desc.midDangerCount,//国内中风险地区个数
           modifyTime: res.newslist[0].desc.modifyTime //时间戳
         }
-        console.log(this.caseNum);
+        /* console.log(this.caseNum); */
       }
     }).catch(error => {
       console.log(error);

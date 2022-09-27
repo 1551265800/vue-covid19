@@ -64,9 +64,11 @@ export default {
         },
     },
     methods: {
+        //添加-
         numZore(num) {
             return num >= 0 ? `+${num}` : num
         },
+        //将时间戳转换成时间
         timestampToTime(timestamp) {
             timestamp = timestamp ? timestamp : null;
             let date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
