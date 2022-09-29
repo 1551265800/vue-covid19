@@ -32,7 +32,7 @@ export default {
   mounted() {
     //疫情信息数据
     api.getNocv({
-      key: "3db611fc1b2a83da29358251615e13d9"
+      //key: "3db611fc1b2a83da29358251615e13d9"
     }).then(res => {
       res = res.data
       if (res.code === 200) {
