@@ -9,9 +9,9 @@
             <ul class="count">
                 <li class="create-item">
                     <div class="create-count">
-                        <b>较昨日<em style="color:rgb(247, 76, 49) ;">{{numZore(caseNum.currentConfirmedIncr)}}</em></b>
+                        <b>较昨日<em style="color:rgb(247, 76, 49);">{{numZore(caseNum.currentConfirmedIncr)}}</em></b>
                     </div>
-                    <strong style="color:rgb(247, 76, 49) ;">{{caseNum.currentConfirmedCount}}</strong>
+                    <strong style="color:rgb(247, 76, 49);">{{caseNum.currentConfirmedCount}}</strong>
                     <span>现存确诊 </span>
                 </li>
                 <li class="create-item">

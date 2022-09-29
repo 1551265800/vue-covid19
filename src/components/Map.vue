@@ -16,13 +16,13 @@ export default {
     mounted() {
         api.getCityNocv().then(res => {
             var allCitys = [];
-            if (res.data.codeid != 10018) {
+            if (res.data.codeid !== 10018) {
                 for (let i = 0; i < res.data.retdata.lenth; i++) {
                     var temp = {
                         name: res.data.retdata[i].xArea,
                         value: res.data.retdata[i].curConfirm
                     }
-                    this.allCitys.push(temp)
+                    this.allCitys.push(temp);
                 }
             } else {
                 this.allCitys = [
@@ -40,14 +40,13 @@ export default {
                     { name: "天津", value: 7 },
                     { name: "山东", value: 3 },
                 ]
-                console.log(this.allCitys);
-                this.$chars.chinaMap("map",this.allCitys)
+                this.$chars.chinaMap("map", this.allCitys)
             }
 
         }).catch(err => {
             console.log(err);
         })
-        this.$chars.chinaMap("map",this.allCitys)
+        this.$chars.chinaMap("map", this.allCitys)
     }
 }
 </script>
